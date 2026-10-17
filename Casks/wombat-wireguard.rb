@@ -1,10 +1,10 @@
 cask "wombat-wireguard" do
-  version "1.1.1"
-  sha256 "66ace5fc3bfd3d9a8d5a38af7b72ec72ba9aa04ca52a693d98d3063143dd242c"
+  version "1.2.0"
+  sha256 "3530f0ddfa0b43e833b21d271e11585361bda28300a33335c0114886a6f8c1c7"
 
   url "https://wombat.vpetkov.net/Wombat-#{version}.dmg"
   name "Wombat"
-  desc "Native WireGuard and AmneziaWG client"
+  desc "Native WireGuard, AmneziaWG and Cisco AnyConnect client"
   homepage "https://wombat.vpetkov.net/"
 
   livecheck do
@@ -28,6 +28,7 @@ cask "wombat-wireguard" do
   caveats <<~EOS
     Open Wombat once and allow its network extension in
     System Settings > General > Login Items & Extensions.
+    Your first Cisco AnyConnect VPN asks once more, for "Wombat OpenConnect".
     Tunnel configurations live in System Settings > VPN; remove them there
     before uninstalling if you no longer need them.
   EOS
