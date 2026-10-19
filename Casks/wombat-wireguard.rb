@@ -1,6 +1,6 @@
 cask "wombat-wireguard" do
-  version "1.2.1"
-  sha256 "2cb8fa844818edbd3595dd082cab9fe38ecbf812790fa53e36708424ff1f404c"
+  version "1.3.0"
+  sha256 "de5f2593dd5d88aba1dad1047a99e68f8cc14d706314a96c337c0fb0b0e928e1"
 
   url "https://wombat.vpetkov.net/Wombat-#{version}.dmg"
   name "Wombat"
@@ -17,6 +17,9 @@ cask "wombat-wireguard" do
 
   app "Wombat.app"
   binary "#{appdir}/Wombat.app/Contents/Helpers/wombat"
+  bash_completion "#{appdir}/Wombat.app/Contents/Resources/completions/wombat.bash"
+  zsh_completion "#{appdir}/Wombat.app/Contents/Resources/completions/_wombat"
+  fish_completion "#{appdir}/Wombat.app/Contents/Resources/completions/wombat.fish"
 
   uninstall quit: "net.vpetkov.wombat"
 
