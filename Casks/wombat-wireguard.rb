@@ -1,6 +1,6 @@
 cask "wombat-wireguard" do
-  version "1.4.8"
-  sha256 "02fcb21d5b7106e45273358d25c1982b9a672f0508f5d262acf74aee2b67ee39"
+  version "1.4.9"
+  sha256 "b986d5997a6337cd6678958d334e0b59fd9e0349dcf2d6ddd42af23850a3e26e"
 
   url "https://wombat.vpetkov.net/Wombat-#{version}.dmg"
   name "Wombat"
